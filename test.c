@@ -10,14 +10,12 @@ int main(void)
     int len2;
 
 
-    len = _printf("%s\n", "hey now");
-    len2 = printf("%s\n", "hey now");
+    len = _printf("%shello%%%c%s\n", d, c, "lol");
+
+    len2 = printf("%shello%%%c%s\n", d, c, "lol");
 
     printf("_printf:[%d]\n", len);
     printf("printf:[%d]\n\n", len2);
-
-	_printf("%shello%%%c%s", d, c, "lol");
-	_printf("%s%s%s", d, d, d);
 
 	return(0);
 }
