@@ -1,4 +1,4 @@
-#include "printfhead.h"
+#include "holberton.h"
 #include <stdarg.h>
 #include <stdlib.h>
 #include <stdio.h>
@@ -38,9 +38,9 @@ int _printf(const char *format, ...)
 				break;
 			case 's':
 				min++;
+				s = va_arg(vl, char*);
 				strbit += _strlen(s);
 				printf("sizeof string = %d\n", strbit);
-				s = va_arg(vl, char*);
 				write(STDOUT_FILENO, s, _strlen(s));
 				break;
 			case '%':
