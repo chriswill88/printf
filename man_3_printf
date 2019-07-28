@@ -1,0 +1,16 @@
+.\" Manpage for printf.
+.TH man 8 "06 May 2010" "1.0" "nuseradd man page"
+.SH NAME
+
+.SH SYNOPSIS
+
+.SH DESCRIPTION
+
+.SH OPTIONS
+
+.SH SEE ALSO
+ 
+.SH BUGS
+No known bugs.
+.SH AUTHOR
+Christian Williams and Andrew Graf
