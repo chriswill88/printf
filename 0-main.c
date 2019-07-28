@@ -13,9 +13,8 @@ int _printf(const char *format, ...)
 {
 	va_list vl;
 	int x = 0, min = 0, total = 0, strbit = 0;
-	char *s;
-	char cvar;
 	char per;
+	char *s;
 	va_start(vl, format);
 	while (format[x] != '\0')
 	{
@@ -25,8 +24,7 @@ int _printf(const char *format, ...)
 			switch(format[x + 1])
 			{
 			case 'c':
-				cvar = va_arg(vl, int);
-				write(STDOUT_FILENO, &cvar, 1);
+				caseC(va_arg(vl, int));
 				break;
 			case 'i':
 				min++;
@@ -39,9 +37,7 @@ int _printf(const char *format, ...)
 			case 's':
 				min++;
 				s = va_arg(vl, char*);
-				strbit += _strlen(s);
-				printf("sizeof string = %d\n", strbit);
-				write(STDOUT_FILENO, s, _strlen(s));
+				strbit += caseS(s);
 				break;
 			case '%':
 				per = '%';
@@ -56,7 +52,7 @@ int _printf(const char *format, ...)
 		{
 			write(STDOUT_FILENO, &format[x], 1);
 		}
-		printf(" <-| index of format --> %d, char at format --> %c\n", x, format[x]);
+		/*printf(" <-| index of format --> %d, char at format --> %c\n", x, format[x]);*/
 		x++;
 	}
 	total = ((x - min) + strbit);
