@@ -1,4 +1,4 @@
-#include "printfhead.h"
+#include "holberton.h"
 
 
 int main(void)
@@ -8,7 +8,6 @@ int main(void)
 
 	_printf("hello%%%c", c);
 	_printf("%s%s%s", d, d, d);
-	_printf("");
-	printf("");
+
 	return(0);
 }
