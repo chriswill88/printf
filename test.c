@@ -1,4 +1,4 @@
-#include "printfhead.h"
+#include "holberton.h"
 
 
 int main(void)
@@ -6,7 +6,7 @@ int main(void)
 	char *d = "bobby";
 	char c = '!';
 
-	_printf("hello%%%c", c);
+	_printf("%shello%%%c%s", d, c, "lol");
 	_printf("%s%s%s", d, d, d);
 
 	return(0);
