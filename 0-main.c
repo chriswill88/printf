@@ -26,14 +26,6 @@ int _printf(const char *format, ...)
 			case 'c':
 				caseC(va_arg(vl, int));
 				break;
-			case 'i':
-				min++;
-				printf ("%d", va_arg(vl, int));
-				break;
-			case 'f':
-				min++;
-				printf ("%f", va_arg(vl, double));
-				break;
 			case 's':
 				min++;
 				s = va_arg(vl, char*);
@@ -52,11 +44,9 @@ int _printf(const char *format, ...)
 		{
 			write(STDOUT_FILENO, &format[x], 1);
 		}
-		/*printf(" <-| index of format --> %d, char at format --> %c\n", x, format[x]);*/
 		x++;
 	}
 	total = ((x - min) + strbit);
-	printf("%d\n", total);
 	va_end(vl);
 	return (total);
 }

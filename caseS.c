@@ -1,7 +1,12 @@
 #include "holberton.h"
 
 
-void caseS(char *z)
+int caseS(char *z)
 {
-	write(STDOUT_FILENO, z, _strlen(z));
+	int i = 0;
+	
+	i = _strlen(z);
+
+	write(STDOUT_FILENO, z, i);
+	return (i);
 }

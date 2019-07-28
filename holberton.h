@@ -8,5 +8,7 @@
 
 int _printf(const char *format, ...);
 int _strlen(char *s);
-int caseC(va_list x);
+int caseC(char c);
+int caseS(char *z);
+
 #endif
