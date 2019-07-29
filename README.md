@@ -18,7 +18,7 @@
 
 
 ## Contributors
-> <ol>
+<ol>
     <li>Christian Williams
     <ul>
         <li>Twitter: https://twitter.com/ChrisWill79</li>
