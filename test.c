@@ -3,19 +3,25 @@
 
 int main(void)
 {
-	char *d = "bobby";
-	char c = '!';
+	//char *d = NULL;
+	//char c = '!';
 
-	int len;
-    int len2;
+	//int len = 0;
+    //int len2 = 0;
 
 
-    len = _printf("%shello%%%c%s\n", d, c, "lol");
+	printf(NULL);
+	_printf(NULL);
+	//printf(NULL);
 
-    len2 = printf("%shello%%%c%s\n", d, c, "lol");
+	//printf("%s", NULL);
 
-    printf("_printf:[%d]\n", len);
-    printf("printf:[%d]\n\n", len2);
+    //printf("%s", d);
+
+    //len2 = printf("");
+
+   	//printf("_printf:[%d]\n", len);
+    //printf("printf:[%d]\n\n", len2);
 
 	return(0);
 }
