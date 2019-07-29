@@ -40,8 +40,7 @@ int _printf(const char *format, ...)
 				write(STDOUT_FILENO, &per, 1);
 				break;
 			default:
-				return(-1);
-				break;
+				return (-1);
 			}
 			x++;
 		}

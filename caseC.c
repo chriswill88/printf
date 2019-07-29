@@ -5,8 +5,8 @@
  * @v: char
  * Return: 1 on success
  */
-int caseC(char v)
+int caseC(unsigned char v)
 {
-	write(STDOUT_FILENO, (unsigned char)&v, 1);
+	write(STDOUT_FILENO, &v, 1);
 	return (1);
 }

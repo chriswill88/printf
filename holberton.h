@@ -8,7 +8,7 @@
 
 int _printf(const char *format, ...);
 int _strlen(char *s);
-int caseC(char c);
+int caseC(unsigned char c);
 int caseS(char *z);
 
 #endif
