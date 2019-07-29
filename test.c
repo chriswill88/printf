@@ -8,7 +8,7 @@ int main(void)
 
 	_printf("hello%%%c", c);
 	_printf("%s%s%s", d, d, d);
-	_printf("");
-	printf("");
+	_printf(NULL);
+	printf(NULL);
 	return(0);
 }
