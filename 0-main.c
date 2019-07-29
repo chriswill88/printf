@@ -34,6 +34,8 @@ int _printf(const char *format, ...)
 				per = '%';
 				write(STDOUT_FILENO, &per, 1);
 				break;
+			case 'd':
+
 			default:
 				return (-1);
 			}
