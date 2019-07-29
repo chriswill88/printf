@@ -4,9 +4,9 @@
 #include <stdio.h>
 #include <unistd.h>
 /**
- * _printf - copy of printf function
- * @format: the operators for the data types to be printed
- * Return: the number of bytes
+ * _printf - prints any data type to stdout
+ * @format: the string with the operators for the types to be printed
+ * Return: the number of bytes being printed
  */
 int _printf(const char *format, ...)
 {
@@ -15,6 +15,8 @@ int _printf(const char *format, ...)
 	char per;
 	char *s;
 
+	if (format == NULL || *format == '\0')
+		return (0);
 	va_start(vl, format);
 	while (format[x] != '\0')
 	{
@@ -41,9 +43,7 @@ int _printf(const char *format, ...)
 			x++;
 		}
 		else
-		{
 			write(STDOUT_FILENO, &format[x], 1);
-		}
 		x++;
 	}
 	total = ((x - min) + strbit);
