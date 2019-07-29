@@ -8,9 +8,19 @@
 int caseS(char *z)
 {
 	int i = 0;
+<<<<<<< HEAD
 
 	i = _strlen(z);
+=======
+>>>>>>> chris_testing_branch
 
+	if (z == NULL)
+	{
+		write(STDOUT_FILENO, "(null)", 6);
+		return(0);
+	}
+
+	i = _strlen(z);
 	write(STDOUT_FILENO, z, i);
 	return (i);
 }
