@@ -8,11 +8,6 @@
 int caseS(char *z)
 {
 	int i = 0;
-<<<<<<< HEAD
-
-	i = _strlen(z);
-=======
->>>>>>> chris_testing_branch
 
 	if (z == NULL)
 	{
