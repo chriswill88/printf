@@ -15,7 +15,9 @@ int _printf(const char *format, ...)
 	char per;
 	char *s;
 
-	if (format == NULL || *format == '\0')
+	if (format == NULL)
+		return (-1);
+	if (*format == '\0')
 		return (0);
 	va_start(vl, format);
 	while (format[x] != '\0')
@@ -38,6 +40,7 @@ int _printf(const char *format, ...)
 				write(STDOUT_FILENO, &per, 1);
 				break;
 			default:
+				return(-1);
 				break;
 			}
 			x++;
