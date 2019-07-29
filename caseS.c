@@ -12,7 +12,7 @@ int caseS(char *z)
 	if (z == NULL)
 	{
 		write(STDOUT_FILENO, "(null)", 6);
-		return (0);
+		return (6);
 	}
 
 	i = _strlen(z);
