@@ -1,8 +1,4 @@
 #include "holberton.h"
-#include <stdarg.h>
-#include <stdlib.h>
-#include <stdio.h>
-#include <unistd.h>
 /**
  * _printf - prints any data type to stdout
  * @format: the string with the operators for the types to be printed
@@ -12,8 +8,7 @@ int _printf(const char *format, ...)
 {
 	va_list vl;
 	int x = 0, min = 0, total = 0, strbit = 0;
-	char per;
-	char *s;
+	char *s, per;
 
 	if (format == NULL)
 		return (-1);
