@@ -13,3 +13,13 @@
   <li>%c: The int argument is converted to an unsigned char</li>
   <l1>%s: Characters are written up and until the terminating null byte</l1>
 </ul>
+
+
+
+
+## Contributors
+> <ol>
+    <li>Christian Williams
+    <ul>
+        <li>Twitter: https://twitter.com/ChrisWill79</li>
+      <li>Github: https://github.com/chriswill88</li>
