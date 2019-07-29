@@ -11,4 +11,5 @@
 ## Format Specifiers
 <ul>
   <li>%c: The int argument is converted to an unsigned char</li>
-  <l1>%
+  <l1>%s: Characters are written up and until the terminating null byte</l1>
+</ul>
