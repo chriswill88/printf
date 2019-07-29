@@ -7,6 +7,6 @@
  */
 int caseC(char v)
 {
-	write(STDOUT_FILENO, &v, 1);
+	write(STDOUT_FILENO, (unsigned char)&v, 1);
 	return (1);
 }
