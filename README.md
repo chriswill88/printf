@@ -23,3 +23,5 @@
     <ul>
         <li>Twitter: https://twitter.com/ChrisWill79</li>
       <li>Github: https://github.com/chriswill88</li>
+      </li>
+      </ul>
