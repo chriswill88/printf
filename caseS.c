@@ -16,7 +16,6 @@ int caseS(char *z)
 	}
 
 	i = _strlen(z);
-	printf("the string -> %s\n", z);
 	write(STDOUT_FILENO, z, i);
 	return (i);
 }

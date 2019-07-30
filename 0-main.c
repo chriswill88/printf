@@ -18,17 +18,18 @@ int switchget(va_list vl, const char *format, int x)
 		break;
 	case 's':
 		s = va_arg(vl, char*);
-		strbit += caseS(s) - 1;
+		strbit += caseS(s);
 		break;
 	case '%':
 		per = '%';
 		write(STDOUT_FILENO, &per, 1);
+		strbit += 1;
 		break;
 	case 'd':
-		strbit += caseD(va_arg(vl, int)) - 1;
+		strbit += caseD(va_arg(vl, int));
 		break;
 	case 'i':
-		strbit += caseD(va_arg(vl, int)) - 1;
+		strbit += caseD(va_arg(vl, int));
 		break;
 	default:
 		return (-1);
@@ -57,6 +58,7 @@ int _printf(const char *format, ...)
 			strbit = switchget(vl, format, x);
 			if (strbit == -1)
 				return (-1);
+			min++;
 			x++;
 		}
 		else
