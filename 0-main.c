@@ -35,7 +35,11 @@ int _printf(const char *format, ...)
 				write(STDOUT_FILENO, &per, 1);
 				break;
 			case 'd':
-
+				caseD(va_arg(vl, int));
+				break;
+			case 'i':
+				caseD(va_arg(vl, int));
+				break;
 			default:
 				return (-1);
 			}

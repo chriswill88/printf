@@ -12,7 +12,7 @@ void rev_string(char *s)
 	int length, c;
 	char *begin, *end, temp;
 
-	length = string_length(s);
+	length = _strlen(s);
 	begin = s;
 	end = s;
 
@@ -29,14 +29,4 @@ void rev_string(char *s)
 		begin++;
 		end--;
 	}
-}
-int _strlen(char *s)
-{
-	int length = 0;
-
-	while (s[length] != '\0')
-	{
-		length++;
-	}
-	return (length);
 }

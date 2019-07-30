@@ -1,10 +1,10 @@
 #include "holberton.h"
 /*
  * print_number - as name states
- * @n: variable 
+ * @n: variable
  * Return: Always 0.
  */
-void print_number(int n)
+void caseD(int n)
 {
 	int b;
 

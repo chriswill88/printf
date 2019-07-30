@@ -11,7 +11,8 @@ int _strlen(char *s);
 int caseC(unsigned char c);
 int caseS(char *z);
 char *rot13(char *z);
-void print_number(int n);
+void caseD(int n);
 int _putchar(char c);
+void rev_string(char *s);
 
 #endif
