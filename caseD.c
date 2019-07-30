@@ -1,20 +1,39 @@
 #include "holberton.h"
-/**
- *
- *
- *
- *
+ * print_number - as name states
+ * @n: variable 
+ * Return: Always 0.
  */
-void print(long n)
+void print_number(int n)
 {
-	if (n < 0)
+	int b;
+
+	if (n > 0)
 	{
-		_putchar ('-');
-		n = -n;
+		n *= -1;
+		for (b = 1000000000; b > 0; b /= 10)
+		{
+			if (n / b != 0)
+			{
+				_putchar(((-n / b) % 10) + '0');
+			}
+		}
 	}
-	if (n / 10)
+	else if (n == 0)
 	{
-		print(n/10);
-		_putchar(n%10 + '0');
+		_putchar('0');
+	}
+	else if (n < 0)
+	{
+		_putchar('-');
+		for (b = 1000000000; b > 0; b /= 10)
+		{
+			if (n / b != 0)
+			{
+				if (n < -2147483647)
+					_putchar((((-n / b) % 10) * -1) + '0');
+				else
+					_putchar(((-n / b) % 10) + '0');
+			}
+		}
 	}
 }
