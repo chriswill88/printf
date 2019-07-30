@@ -14,7 +14,7 @@ int switchget(va_list vl, const char *format, int x)
 	switch (format[x + 1])
 	{
 	case 'c':
-		caseC(va_arg(vl, int));
+		strbit += caseC(va_arg(vl, int));
 		break;
 	case 's':
 		s = va_arg(vl, char*);
@@ -55,7 +55,7 @@ int _printf(const char *format, ...)
 		if (format[x] == '%')
 		{
 			min++;
-			strbit = switchget(vl, format, x);
+			strbit += switchget(vl, format, x);
 			if (strbit == -1)
 				return (-1);
 			min++;
