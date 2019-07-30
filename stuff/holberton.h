@@ -8,11 +8,13 @@
 
 int _printf(const char *format, ...);
 int _strlen(char *s);
-<<<<<<< HEAD:printfhead.h
-int caseC(char v);
-=======
-
+int caseC(unsigned char c);
 int caseS(char *z);
+char *rot13(char *z);
+int caseD(int n);
+int _putchar(char c);
+void rev_string(char *s);
+int switchget(va_list vl, const char *format, int x);
 
->>>>>>> 3c50b8b480c57e8e5421ba6a6b96216462884f63:holberton.h
+
 #endif
