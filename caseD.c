@@ -1,6 +1,6 @@
 #include "holberton.h"
-/*
- * print_number - as name states
+/**
+ * caseD - as name states
  * @n: variable
  * Return: Always 0.
  */
