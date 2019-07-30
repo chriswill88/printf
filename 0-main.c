@@ -47,6 +47,8 @@ int _printf(const char *format, ...)
 	va_list vl;
 	int x = 0, min = 0, total = 0, strbit = 0;
 
+	if (*format == '\0')
+		return (0);
 	if (format == NULL)
 		return (-1);
 	va_start(vl, format);
