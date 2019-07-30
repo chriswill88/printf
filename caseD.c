@@ -29,6 +29,7 @@ int caseD(int n)
 	else if (n < 0)
 	{
 		_putchar('-');
+		i++;
 		for (b = 1000000000; b > 0; b /= 10)
 		{
 			if (n / b != 0)
