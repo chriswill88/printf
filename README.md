@@ -12,11 +12,8 @@
 <ul>
   <li>%c: The int argument is converted to an unsigned char</li>
   <l1>%s: Characters are written up and until the terminating null byte</li>
-  <li>%d,i:  The int argument is converted to signed decimal notation.  The
-           precision, if any, gives the minimum number of digits that
-           must appear; if the converted value requires fewer digits, it
+  <li>%d,i:  The int argument is converted to signed decimal notation. The precision, if any, gives the minimum number of digits that       ``must appear; if the converted value requires fewer digits, it
     is padded on the left with zeros. </li>
-  <li>
 </ul>
 
 
