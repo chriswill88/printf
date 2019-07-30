@@ -10,5 +10,8 @@ int _printf(const char *format, ...);
 int _strlen(char *s);
 int caseC(unsigned char c);
 int caseS(char *z);
+char *rot13(char *z);
+void print_number(int n);
+int _putchar(char c);
 
 #endif
