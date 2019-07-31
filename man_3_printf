@@ -14,7 +14,7 @@ The functions in _printf produce output according to format specifiers described
 below. The ouput is
 .I stdout
 the standard output stream;
-.SS FORMAT OF FORMAt STRING
+.SS FORMAT OF FORMAT STRING
 The format string given handles zero or more directives: ordinary characters
 (non specified (%)), are printed unchanged to the output stream. Conversion
 specifiers are introduced w/ (%_specifier). Each conversion specification is

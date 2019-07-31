@@ -38,7 +38,9 @@ int switchget(va_list vl, const char *format, int x)
 		strbit += rot13(va_arg(vl, char*));
 		break;
 	default:
-		return (-1);
+		_putchar(format[x]);
+		strbit += 1;
+		break;
 	}
 	return (strbit);
 }
