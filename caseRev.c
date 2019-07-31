@@ -9,7 +9,7 @@ int rev_string(char *s)
 {
 	int i = 0;
 
-	if (z == NULL)
+	if (s == NULL)
 	{
 		write(STDOUT_FILENO, "(llun)", 6);
 		return (6);
