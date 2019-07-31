@@ -29,13 +29,27 @@ The arguments my compliment properly with provided specifier. The arguments are
 used in the order given.
 .SH Conversion Specifiers
 A character that specifies the type of conversion to be applied.
-
-
-
+.TP
+.BR \-d, i\fr
+The int argument is converted to signed decimal notation.
+.TP
+.BR \-c\fr
+The int argument is converted to an
+.I unsigned char,
+and the resulting character is written.
+.TP
+.BR \-s\fr
+The const char * argument is expected to be a pointer to an array of
+.I character type
+(pointer to a string). Characters from the array are written up to
+(but not including) a terminating null byte ('\\0').
+.TP
+.BR \-%\fr
+A % is written. No argument is converted. The complete conversion
+specification is '%%'.
 .SH SEE ALSO
-
+printf(1), asprintf(3), puts(3), scanf(3).
 .SH BUGS
 No known bugs.
 .SH AUTHOR
 Christian Williams and Andrew Graf
-
