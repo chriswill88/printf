@@ -6,27 +6,17 @@
  *
  * string_length - (char *pointer)
  */
-void rev_string(char *s)
+int rev_string(char *s)
 {
-	int _strlen(char *);
-	int length, c;
-	char *begin, *end, temp;
+	int i = 0;
 
-	length = _strlen(s);
-	begin = s;
-	end = s;
-
-	for (c = 0 ; c < length - 1 ; c++)
+	i = _strlen(s);
+	while (i >= 0)
 	{
-		end++;
+		_putchar(s[i]);
+		i--;
 	}
-	for (c = 0 ; c < length / 2 ; c++)
-	{
-		temp = *end;
-		*end = *begin;
-		*begin = temp;
 
-		begin++;
-		end--;
-	}
+
+	return (_strlen(s));
 }

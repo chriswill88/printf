@@ -6,7 +6,7 @@
  *
  * Return: z
  */
-char *rot13(char *z)
+int rot13(char *z)
 {
 	int x = 0;
 	int y;
@@ -19,11 +19,11 @@ char *rot13(char *z)
 		{
 			if (z[x] == a[y])
 			{
-				z[x] = b[y];
+				_putchar (b[y]);
 				break;
 			}
 		}
 		x++;
 	}
-	return (z);
+	return (_strlen(z));
 }
