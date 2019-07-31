@@ -13,6 +13,9 @@ int rot13(char *z)
 	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
+	if (z == NULL)
+		z = "(null)";
+
 	while (z[x] != '\0')
 	{
 		for (y = 0 ; a[y] != '\0' ; y++)
