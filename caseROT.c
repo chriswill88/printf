@@ -14,7 +14,10 @@ int rot13(char *z)
 	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
 	if (z == NULL)
-		z = "(null)";
+	{
+		write(STDOUT_FILENO, "(null)", 6);
+		return (6);
+	}
 
 	while (z[x] != '\0')
 	{

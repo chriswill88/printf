@@ -11,7 +11,7 @@ int rev_string(char *s)
 
 	if (s == NULL)
 	{
-		write(STDOUT_FILENO, "(llun)", 6);
+		write(STDOUT_FILENO, "(null)", 6);
 		return (6);
 	}
 
