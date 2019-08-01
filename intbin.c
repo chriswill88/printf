@@ -4,12 +4,10 @@
  * @a: the int to convert
  * Return: # of bytes on success
  */
-int intbin(int a)
+int intbin(unsigned int a)
 {
 	int i = 0, ret = 0;
 	char ar[1042];
-	if (a < 0)
-		return (-1);
 
 	while (a)
 	{

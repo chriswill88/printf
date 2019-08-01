@@ -11,7 +11,7 @@ int _strlen(char *s);
 int caseC(unsigned char c);
 int caseS(char *z);
 int rot13(char *z);
-int intbin(int a);
+int intbin(unsigned int a);
 int caseD(int n);
 int _putchar(char c);
 int rev_string(char *s);
