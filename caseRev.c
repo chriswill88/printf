@@ -17,12 +17,13 @@ int rev_string(char *s)
 
 
 	i = _strlen(s);
+	i--;
 	while (i >= 0)
 	{
 		_putchar(s[i]);
 		i--;
 	}
+	i++;
 
-
-	return (_strlen(s));
+	return (_strlen(s) - 1);
 }
