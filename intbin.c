@@ -21,12 +21,11 @@ int intbin(int a)
 		a >>= 1;
 	}
 	i--;
-	while (i > 0)
+	while (i >= 0)
 	{
 		_putchar (ar[i]);
 		ret++;
 		i--;
 	}
-
 	return (ret);
 }
