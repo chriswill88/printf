@@ -9,7 +9,7 @@
 int rot13(char *z)
 {
 	int x = 0;
-	int y;
+	int y = 0;
 	char a[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	char b[] = "NOPQRSTUVWXYZABCDEFGHIJKLMnopqrstuvwxyzabcdefghijklm";
 
@@ -21,14 +21,16 @@ int rot13(char *z)
 
 	while (z[x] != '\0')
 	{
-		for (y = 0 ; a[y] != '\0' ; y++)
+		for (y = 0; a[y] != '\0'; y++)
 		{
 			if (z[x] == a[y])
 			{
-				_putchar (b[y]);
+				_putchar(b[y]);
 				break;
 			}
 		}
+		if (a[y] == '\0')
+			_putchar(z[x]);
 		x++;
 	}
 	return (_strlen(z));
