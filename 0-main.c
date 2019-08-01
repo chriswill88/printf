@@ -39,6 +39,9 @@ int switchget(va_list vl, const char *format, int x)
 		break;
 	case '\0':
 		return (-1);
+	case 'b':
+		strbit += intbin(va_arg(vl, int));
+		break;
 	default:
 		_putchar(format[x + 1]);
 		strbit += 2;
