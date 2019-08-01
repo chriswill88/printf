@@ -33,6 +33,7 @@ int switchget(va_list vl, const char *format, int x)
 		break;
 	case 'r':
 		strbit += rev_string(va_arg(vl, char*));
+		strbit -= 1;
 		break;
 	case 'R':
 		strbit += rot13(va_arg(vl, char*));
@@ -40,8 +41,9 @@ int switchget(va_list vl, const char *format, int x)
 	case '\0':
 		return (-1);
 	default:
-		_putchar('%');
-		strbit += 1;
+		_putchar(format[x]);
+		_putchar(format[x + 1]);
+		strbit += 2;
 	}
 	return (strbit);
 }
