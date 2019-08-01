@@ -7,7 +7,7 @@
  */
 int rev_string(char *s)
 {
-	int i = 0;
+	int i = 0, n = 0;
 
 	if (s == NULL)
 	{
@@ -16,14 +16,13 @@ int rev_string(char *s)
 	}
 
 
-	i = _strlen(s);
-	i--;
+	i = _strlen(s) - 1;
 	while (i >= 0)
 	{
 		_putchar(s[i]);
 		i--;
+		n++;
 	}
-	i++;
 
-	return (_strlen(s) - 1);
+	return (n);
 }
