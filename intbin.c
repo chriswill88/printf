@@ -27,6 +27,5 @@ int intbin(int a)
 		ret++;
 		i--;
 	}
-	ret--;
 	return (ret);
 }
