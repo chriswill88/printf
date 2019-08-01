@@ -9,6 +9,11 @@ int intbin(unsigned int a)
 	int i = 0, ret = 0;
 	char ar[1042];
 
+	if (a == 0)
+	{
+		_putchar('0');
+		return(1);
+	}
 	while (a)
 	{
 		if (a & 1)
